@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+class Main1 {
         public static void main(String[] args) {
                 String bob = "Bob";
                 Scanner scan = new Scanner(System.in);
@@ -11,9 +11,10 @@ public class Main {
                 System.out.print("Введите желаемую сумму кредита");
                 int sum = scan.nextInt();
 
-                if (!name.equalsIgnoreCase(bob) && (age >= 18) && (sum <= (age * 100))) {
-                    System.out.println("Кредит одобрен");
-
+                if (!name.equals("bob") && (age >= 18) && (sum <= (age * 100))) {
+                        System.out.println("Кредит одобрен");
+                }else {
+                        System.out.println("Отказано");
                 }
-            }
+        }
         }
