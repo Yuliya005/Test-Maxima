@@ -13,7 +13,7 @@ class Main1 {
 
                 if (!name.equals("bob") && (age >= 18) && (sum <= (age * 100))) {
                         System.out.println("Кредит одобрен");
-                }else {
+                } else {
                         System.out.println("Отказано");
                 }
         }
