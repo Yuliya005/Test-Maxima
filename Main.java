@@ -6,31 +6,20 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Random rnd = new Random();
         System.out.println("Введите размер массива");
-        int size = sc.nextInt();// Читаем с клавиатуры размер массива и записываем в size
-        int[] array = new int[size];// Создаём массив int размером в size
+        int size = sc.nextInt();
+        int[] array = new int[size];
         System.out.println("Полученные элементы массива" + " ");
         for (int i = 0; i < size; i++) {
-            array[i] = rnd.nextInt();// Заполняем массив элементами, введёнными с клавиатуры
+            array[i] = rnd.nextInt();
+        }
+        for (int i = 0; i < size; i++) {
+            System.out.println(" " + array[i] );
         }
 
-            int i;
-            for (i = 0; i < size; i++) {
-                System.out.print(" " + array[i]); // Выводим на экран, полученный массив
-            }
-
-
-
+         int min = array[0];
+          for (int i = 0; i < array.length; i++) {
+            if (array[i] < min)
+            min = array[i];
         }
-
-        }
-
-
-
-
-
-
-
-
-
-
-
+             System.out.println("Минимальное число " + min);
+    }   }
