@@ -1,28 +1,17 @@
-public class Circle extends PlaneShape {
-    private static final String NAME = "Circle";
+public class Circle extends GeometricShapes{
 
-    private double radius;
+    public final double PI = 3.14;
+    public double radius;
+    public Circle() {
+    }
 
     public Circle(double radius) {
         this.radius = radius;
     }
-
-    @Override
-    public double getArea() {
-        double area = Math.PI * radius * radius;
-        return area;
-    }
-
-    @Override
-    public String getName() {
-        return NAME;
-    }
-
-    public double getRadius() {
-        return radius;
-    }
-
-    public void setRadius(double radius) {
+    public void setRadius(double radius){
         this.radius = radius;
     }
-}
+    @Override
+    public double getArea() {
+        return (PI * (radius*radius));
+    }  }
