@@ -1,10 +1,10 @@
 public class Main2 {
     public static void main(String[] args) {
-        PlaneShape[] Shape = {new Square(6),
-                new Triangle(5, 8, 5),
-                new Circle(6)};
+        Figure[] figure = {new Square(10),
+                new Triangle(5, 7, 6),
+                new Circle(8)};
 
-        for (PlaneShape shp : Shape)
-            System.out.println(shp.getName() + ": area = " + shp.getArea());
+        for(Figure fig : figure)
+            System.out.println(fig.getName() + ": area = " + fig.getArea());
     }
 }
